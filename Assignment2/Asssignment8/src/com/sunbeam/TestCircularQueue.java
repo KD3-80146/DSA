@@ -29,9 +29,31 @@ public class TestCircularQueue {
 			q1.push(key);
 			break;
 		case 2:
-			
-
+			if(q1.isEmpty())
+			{
+				System.out.println("empty");
+			}
+			else {
+				
+				q1.pop();
+				System.out.println("element poped");
+			}
+			break;
+		case 3:
+			if(q1.isEmpty())
+			{
+				System.out.println("empty");
+			}
+			else
+			{
+				System.out.println("First element is"+q1.peek());
+			}
+			break;
+		
+		case 4:
+			choice=0;
 		default:
+			
 			break;
 		}
       }while(choice!=0);
