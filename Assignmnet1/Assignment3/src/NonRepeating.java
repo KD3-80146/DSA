@@ -8,11 +8,9 @@ public class NonRepeating {
 			int count=0;
 			for(int j=0;j<size;j++)
 			{
-
 				if(arr[i]==arr[j])
 				{
-					count=count+1;
-					 
+					count=count+1;	 
 				}
 			}
 			if(count==1)
@@ -27,7 +25,7 @@ public class NonRepeating {
 	public static void main(String[] args) {
 		
 
-		  int arr[]={ 1, 2,  -1, 2, 1, 0, 4, -1, 7, 8 };
+		  int arr[]={ 1, 2, 3, -1, 2, 1, 0, 4, -1, 7, 8 };
 		  int ans=Find(arr,arr.length);
 		  System.out.println(arr[ans]);
 		  
