@@ -21,7 +21,7 @@ public class FindRank {
 		
 				
 	   int arr[]={ 10, 20, 15, 3, 4, 4, 1 };
-	   int key=10;
+	   int key=4;
 	   int result=rankFind(arr,arr.length, key);
 	   System.out.println(result);
 
