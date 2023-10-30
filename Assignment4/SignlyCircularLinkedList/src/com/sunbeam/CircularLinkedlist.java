@@ -106,12 +106,13 @@ public class CircularLinkedlist {
     	  }
     	  else
     	  {
-    		  Node trav=tail;
-    		  while(trav.next.next!=tail)
-    		  {
-    			  trav=trav.next;
-    		  }
-    		  tail=trav;
+    		  Node trav = tail;
+    	        while (trav.next != tail) {
+    	            trav = trav.next;
+    	        }
+    	        trav.next = tail.next;
+    	        tail = trav;
+    	        
     	  }
     	  
       }
