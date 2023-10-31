@@ -13,13 +13,16 @@ public class LinkedList {
 	}
 	
 	private Node head;
+	private int count;
 	
 	public LinkedList() {
 		this.head=null;
+		this.count=0;
 		
 	}
 	public boolean isEmpty()
 	{
+		count++;
 		return head==null;
 	}
 	
@@ -29,14 +32,27 @@ public class LinkedList {
 		
 		if(isEmpty())
 		{
+			count++;
 			head=n1;
 		}
 		else
 		{
+			count++;
 			n1.next=head;
 			head=n1;
 		}
 	}
+	
+	 public void bubble()
+	 {
+		 for(int i=0;i<count-1&&head.next!=null;i++)
+		 {
+			 for(int j=i+1;j<count&&head.next!=null;j++)
+			 {
+				
+			 }
+		 }
+	 }
 	
 	
 	public void  display()

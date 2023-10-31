@@ -47,7 +47,7 @@ public class ReverselinkedList {
 	{
 		Node prv=null;
 		Node trav=head;
-		Node next;
+		Node next=null;
 		while(trav!=null)
 		{
 			next=trav.next;
