@@ -93,14 +93,14 @@ public class List {
 			  Node trav=head;
 			  if(pos<=count+1)
 			  {
-				  for(int i=1;i<pos;i++)
+				  for(int i=1;i<pos-1;i++)
 				  {
 					  trav=trav.next;
 				  }
 				  n1.next=trav.next;
 				  n1.prev=trav;
 				  trav.next=n1;
-				  trav.next.prev=n1;
+				  n1.next.prev=n1;
 				  count++;
 				  
 			  }
