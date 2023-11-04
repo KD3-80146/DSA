@@ -12,7 +12,7 @@ public class StackImplement {
               return;
           }
 
-          // Recursive case: Remove the top element, insert the target at the bottom, and then re-insert the removed elements.
+      
           int topele = q1.poll();
           insertAtBottom(q1, target);
           q1.add(topele);
@@ -45,10 +45,10 @@ public class StackImplement {
 	            q1.add(x);
 	        }
 
-	        // Reverse the queue.
+	       
 	        reverse(q1);
 
-	        // Print the reversed queue.
+	        
 	        System.out.println("Reversed Queue:");
 	        while (!q1.isEmpty()) {
 	            System.out.println(q1.poll());
